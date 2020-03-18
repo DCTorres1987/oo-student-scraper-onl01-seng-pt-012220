@@ -5,6 +5,7 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     doc = Nokogiri::HTML(open(index_url))
+    doc.to_a
     binding.pry
   end
 
