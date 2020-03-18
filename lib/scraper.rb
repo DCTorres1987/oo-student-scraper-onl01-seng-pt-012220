@@ -24,6 +24,7 @@ class Scraper
     html = open(profile_url)
     index = Nokogiri::HTML(html)
     index.css("div.main-wrapper.profile .social-icon-container a").each do |social|
+      
     
   end
 
